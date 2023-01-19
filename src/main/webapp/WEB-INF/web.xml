@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.5" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>SporSalonuOtomasyonu</display-name>
+	<welcome-file-list>
+		
+		<welcome-file>index.html</welcome-file>
+			
+	</welcome-file-list>
+	
+	<servlet>
+	<servlet-name>yongir</servlet-name>
+	<servlet-class>gym.admin</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>yongir</servlet-name>
+	<url-pattern>/yongir.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>dietgir</servlet-name>
+	<servlet-class>gym.diet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>dietgir</servlet-name>
+	<url-pattern>/diyet.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>coachgir</servlet-name>
+	<servlet-class>gym.coach</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>coachgir</servlet-name>
+	<url-pattern>/coach.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>sporcugir</servlet-name>
+	<servlet-class>gym.sporcu</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>sporcugir</servlet-name>
+	<url-pattern>/sporcu.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	<servlet-name>admindietekle</servlet-name>
+	<servlet-class>gym.admindietadd_db</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>admindietekle</servlet-name>
+	<url-pattern>/admindietekle.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	<servlet-name>admindietsil</servlet-name>
+	<servlet-class>gym.admindietdel_db</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>admindietsil</servlet-name>
+	<url-pattern>/admindietsil.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>admindietlist</servlet-name>
+	<servlet-class>gym.admindietlist</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>admindietlist</servlet-name>
+	<url-pattern>/admindietlist.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>admincoachekle</servlet-name>
+	<servlet-class>gym.admincoachadd_db</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>admincoachekle</servlet-name>
+	<url-pattern>/admincoachadd.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>admincoachsil</servlet-name>
+	<servlet-class>gym.admincoachdel_db</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>admincoachsil</servlet-name>
+	<url-pattern>/admincoachsil.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>admincoachlist</servlet-name>
+	<servlet-class>gym.admincoachlist</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>admincoachlist</servlet-name>
+	<url-pattern>/admincoachlist.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>adminsporcuekle</servlet-name>
+	<servlet-class>gym.adminsporcuadd_db</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>adminsporcuekle</servlet-name>
+	<url-pattern>/adminsporcuadd.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>adminsporcusil</servlet-name>
+	<servlet-class>gym.adminsporcudel_db</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>adminsporcusil</servlet-name>
+	<url-pattern>/adminsporcusil.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>adminsporculist</servlet-name>
+	<servlet-class>gym.adminsporculist</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>adminsporculist</servlet-name>
+	<url-pattern>/adminsporculist.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	<servlet>
+	<servlet-name>dietcrud</servlet-name>
+	<servlet-class>gym.dietcrud_db</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>dietcrud</servlet-name>
+	<url-pattern>/dietcrudadd.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	<servlet>
+	<servlet-name>dietcruddel</servlet-name>
+	<servlet-class>gym.dietcruddel_db</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>dietcruddel</servlet-name>
+	<url-pattern>/dietcrudsil.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	<servlet>
+	<servlet-name>dietcrudlist</servlet-name>
+	<servlet-class>gym.dietcrudlist</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>dietcrudlist</servlet-name>
+	<url-pattern>/dietcrudlist.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>coachadd</servlet-name>
+	<servlet-class>gym.coachcrud_db</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>coachadd</servlet-name>
+	<url-pattern>/coachcrudadd.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>coachcrudlist</servlet-name>
+	<servlet-class>gym.coachcrudlist</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>coachcrudlist</servlet-name>
+	<url-pattern>/coachlist.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>coachdel</servlet-name>
+	<servlet-class>gym.coachDel</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>coachdel</servlet-name>
+	<url-pattern>/coachdel.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>sporcudietlist</servlet-name>
+	<servlet-class>gym.sporcudietlist</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>sporcudietlist</servlet-name>
+	<url-pattern>/sporcudietlist.bhr</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+	<servlet-name>sporcuantlist</servlet-name>
+	<servlet-class>gym.sporcuantlist</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>sporcuantlist</servlet-name>
+	<url-pattern>/sporcuantlist.bhr</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
